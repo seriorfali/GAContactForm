@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+		<title>Course Application</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	</head>
+	<body>
+		<div id="container" class="col-md-2">
+			<article>
+				<header>
+					<h1>Your Contact Info</h1>
+				</header>
+				<p>
+					<form id="contact">
+						<div class="label">
+							<label for="name">Your Name</label>
+						</div>
+						<div class="section" id="name">
+							<input type="text" placeholder="First" class="small name" id="firstname">
+							<input type="text" placeholder="Last" class="small name" id="lastname">
+						</div>
+						<br>
+						<div class="label">
+							<label for="phone">Phone Number</label>
+						</div>
+						<div class="section" id="phone">
+							<input type="text" maxlength="3" class="small phone" id="phoneFirst3"> –
+							<input type="text" maxlength="3" class="small phone" id="phoneSecond3"> –
+							<input type="text" maxlength="4" class="small phone" id="phoneLast4">
+						</div>
+						<br>
+						<div class="label">
+							<label for="address">Address</label>
+						</div>
+						<div class="section" id="address">
+							<input type="text" placeholder="Street Address" class="small long" id="street1"><br>
+							<input type="text" placeholder="Address Line 2" class="small long" id="street2"><br>
+							<input type="text" placeholder="City" class="small" id="city">
+							<input type="text" maxlength="2" placeholder="State" class="small" id="state">
+							<input type="text" maxlength="5" placeholder="Postal Code" class="small" id="zip">
+						</div>
+					</form>
+			</article>
+			<article>
+				<header>
+					<h1>Skills & Interests</h1>
+				</header>
+				<p>
+					<form id="skills_interests">
+						<div class="label">
+							<label for="course">Course</label>
+						</div>
+						<div class="section" id="course">
+							<select for="course">
+								<option value="selectOne">Select One</option>
+								<optgroup label="Web Development">
+									<option value="frontEnd">Front-end</option>
+									<option value="backEnd">Back-end</option>
+								</optgroup>
+								<optgroup label="Design">
+									<option value="frontEnd">Visual Design</option>
+									<option value="frontEnd">User Experience</option>
+								</optgroup>
+							</select>
+						</div>
+						<br>
+						<div class="label">
+							<label for="experience">Past Experience</label>
+						</div>
+						<div class="section" id="experience">
+							<input type="text" class="big" id="experienceInput">
+						</div>
+					</form>
+				</p>
+			</article>
+			<article>
+				<header>
+					<h1>Anything Else?</h1>
+				</header>
+				<p>
+					<form id="else">
+						<div class="label">
+							<label for="referral">Referral</label>
+						</div>
+						<div class="section" id="referral">
+							<select for="referral">
+								<option value="none">None</option>
+								<option value="friend">Friend</option>
+								<option value="instructor">Instructor</option>
+								<option value="online">Online</option>
+							</select>
+						</div>
+						<br>
+						<div class="label">
+							<label for="comments">Comments</label>
+						</div>
+						<div class="section" id="comments">
+							<input type="text" class="big" id="commentsInput">
+						</div>
+					</form>
+				</p>
+			</article>
+			<footer>
+				<form>
+					<input type="submit" value="Save Draft">
+					<input type="submit" value="Submit">
+				</form>
+			</footer>
+		</div>
+	</body>
+</html>

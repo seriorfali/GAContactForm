@@ -1,0 +1,159 @@
+/*
+Project Name: Course Application
+Client: GA WDI
+Author: Seri Orfali
+Developer @GA in LA
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: .9375rem/2 "Circular", Helvetica, Arial, sans-serif;
+     background-image: url("../images/background.png");
+     margin-top: 28px;
+     margin-left: 22px;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+h1 {
+  font-size: 12px;
+  height: 8px;
+}
+
+.label {
+  width: 120px;
+  vertical-align: top;
+  display: inline-block;
+  padding-top: 3px;
+}
+
+.section {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.phone {
+  width: 60px;
+}
+
+input {
+  border: 1.8px solid;
+  border-radius: 3px;
+  border-color: #DCDCDC;
+  background-color: #FDF7E2;
+  padding-left: 4px;
+}
+
+.small {
+  height: 23px;
+}
+
+.long {
+  width: 300px;
+  margin-bottom: 1px;
+}
+
+.name {
+  width: 148px;
+}
+
+.big {
+  height: 85px;
+  min-width: 400px;
+}
+
+#city {
+  width: 129px;
+}
+
+#state {
+  width: 82px;
+}
+
+#zip {
+  width: 82px;
+}
+
+::-webkit-input-placeholder {
+  font-family: .9375rem/2 "Circular", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 90;
+  vertical-align: middle;
+}
+::-moz-placeholder {
+  font-family: .9375rem/2 "Circular", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 90;
+  vertical-align: middle;
+}
+:-ms-input-placeholder {
+  font-family: .9375rem/2 "Circular", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 90;
+  vertical-align: middle;
+}
+input:-moz-placeholder {
+  font-family: .9375rem/2 "Circular", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 90;
+  vertical-align: middle;
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
